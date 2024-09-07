@@ -1,0 +1,51 @@
+.doneText {
+    text-decoration: line-through;
+    color: red;
+}
+@media (max-width: 576px) {
+    .col-9, .col-7 {
+        width: 100%;
+    }
+}
+.doneText {
+    opacity: 0.6;
+    text-decoration: line-through;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: scale(0.95);
+  }
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    background-color: #333;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+    background-color: #555;
+}
+
+.social-icons a.instagram {
+    background-color: #C13584;
+}
+
+.social-icons a.github {
+    background-color: #333;
+}
+
+.social-icons a.x {
+    background-color: #1DA1F2;
+}  
