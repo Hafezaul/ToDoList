@@ -2,11 +2,20 @@
     text-decoration: line-through;
     color: red;
 }
-@media (max-width: 576px) {
-    .col-9, .col-7 {
-        width: 100%;
+/* CSS untuk tabel dengan scrolling horizontal pada perangkat mobile */
+@media (max-width: 767px) { /* Anda bisa menyesuaikan lebar viewport sesuai kebutuhan */
+    .table-scroll {
+        display: block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; /* Untuk smooth scrolling di iOS */
+        white-space: nowrap; /* Mencegah teks terputus */
+    }
+
+    .table-scroll table {
+        width: 100%; /* Sesuaikan lebar tabel */
     }
 }
+
 .doneText {
     opacity: 0.6;
     text-decoration: line-through;
@@ -19,7 +28,6 @@
     gap: 15px;
     margin-top: 20px;
 }
-
 .social-icons a {
     width: 50px;
     height: 50px;
